@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body{
+    padding: 5% 10%;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center; /* centrira samo ono sto se nabraja,
+    ne i kvadratiće ispred*/
+    list-style-position: inside;/* centrira i kvadratice*/
+        /*outside - ne centrira kvadratice*/
+    
+    color: #00f;
+    line-height: 1.6;
+   /*  list-style-image: url('../images/checkmark.png');
+    list-style:square url('../images/checkmark.png') inside; */
+}
+
+ul li:nth-child(even){
+    color: red;
+}
+
+ul ::marker{
+    color: olivedrab;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Magic >>";
+}
